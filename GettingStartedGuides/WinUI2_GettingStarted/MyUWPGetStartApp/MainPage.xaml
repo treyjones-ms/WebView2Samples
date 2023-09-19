@@ -10,6 +10,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <controls:WebView2 x:Name="WebView2" Source="https://bing.com"/>
+        <controls:WebView2 x:Name="WebView2" />
     </Grid>
 </Page>

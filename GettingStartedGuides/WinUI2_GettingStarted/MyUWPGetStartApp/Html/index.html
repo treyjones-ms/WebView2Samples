@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<!--Copyright (C) Microsoft Corporation. All rights reserved.
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Input Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="always_up_to_date_bg">
+<h2 id="header" class="page_header">Welcome!</h2>
+    <script>
+        document.addEventListener("keypress", function (ev) {
+            document.getElementById("output").innerHTML += ev.code + "<br />";
+        });
+    </script>
+    <div id="output"></div>
+    <div onclick="location.href='https://www.bing.com';">Click me to go to Bing</div>
+    <!--<input type="text" id="input" />-->
+    <p>You should be able to set focus to the page by clicking and then press any keystroke and the page will display the input.
+        This only works if you have a focusable element on the dom, such as an input text field. You can uncomment one in Html/index.html to see the desired behavior.
+        You can also click the "click me to go to bing" text above and see that input remains broken after navigating to a new page, even if that page has an input field.
+    </p>
+</body>
+</html>
